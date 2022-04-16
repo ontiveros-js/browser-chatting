@@ -1,0 +1,182 @@
+ body, html{
+    width: 100%; 
+    height: 100%;
+    background-image: url("../img/whatsapp-fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+
+} 
+
+.header{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #3fa55f;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.header div{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+.header button{
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(152, 185, 152);
+    color: aliceblue;
+    margin-left: 5px;
+}
+
+.bar-chat{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    padding: 12px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 4px;
+    z-index: 5;
+}
+
+.bar-chat textarea{
+    resize: none;
+    border-radius: 12px;
+}
+
+.bar-chat button {
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+    border: none;
+    background-color: #3fa55f;
+
+}
+
+.bar-chat button img{
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg)
+}
+
+.div-padre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 8px;
+}
+
+.div-padre__h3{
+    position: absolute;
+    top: -38px;
+}
+
+
+.div-padre__div-card{
+    display: inline-block;
+    margin-top: 25px;
+    background-color: rgb(152, 185, 152);
+    line-height: 18px;
+    padding: 5px 12px 5px 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+    word-wrap: break-word;
+    hyphens: auto
+  
+}
+
+.div-padre__div-card::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(152, 185, 152);
+    top: -2;
+    right: -8px;
+    transform: rotate(45deg);
+
+}
+
+.div-padre__div-card-{
+    background-color: white;
+}
+
+.div-padre__div-card-::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    top: -2;
+    left: -7px;
+    transform: rotate(45deg);
+
+}
+
+.div-padre__div-btn{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.div-padre__div-card-nameChanged{
+    display: inline-block;
+    background-color: aliceblue;
+    width: 85%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    hyphens: auto;
+    border-radius: 6px;
+    color: dimgrey;
+    margin: 25px auto 0;
+    padding: 8px;
+    text-align: center;
+
+}
+
+.userInput{
+    display: none;
+}
+
+.h1user{
+    display: none;
+}
+
+.btnEdit, .btnDelete{
+    border: none;
+    background-color: transparent;
+    color: red;
+}
+
+.color{
+    display: none;
+}
+
+#div{
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    }
+
